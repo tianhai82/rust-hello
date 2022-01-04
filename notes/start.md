@@ -27,3 +27,8 @@ match and if are expressions, can be binded to variables
 
 let content = std::fs::read_to_string("kv.db")?; -> use ? to propagate the error to the caller
 
+use todo!() to tell compiler that the return type will be handled later
+
+the last method to be called can take ownership of self so that when other methods are called after this method, the compiler will warn you of that
+
+"drop trait" specifies what happens when an owned value goes out of scope
